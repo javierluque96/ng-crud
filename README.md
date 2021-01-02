@@ -1,5 +1,5 @@
-#Games Crud
-##Overview
+# Games Crud
+## Overview
 This app uses:
 - Backend: NodeJS with TypeScript
 - Database: MySQL
