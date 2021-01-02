@@ -1,9 +1,9 @@
 # Games Crud
 ## Overview
 This app uses:
-- Backend: NodeJS with TypeScript
-- Database: MySQL
-- FrontEnd: Angular 11, Bootstrap
+- Backend &rightarrow; NodeJS with TypeScript
+- Database &rightarrow; MySQL
+- FrontEnd &rightarrow; Angular 11, Bootstrap
 
 About BootStrap, I have used a bootstrap theme from [BootSwatch](https://bootswatch.com/lux/).
 
