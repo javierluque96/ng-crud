@@ -1,9 +1,9 @@
+import cors from "cors";
 import express, { Application } from "express";
 import morgan from "morgan";
-import cors from "cors";
-
-import indexRoutes from "./routes/indexRoutes";
 import gamesRoutes from "./routes/gamesRoutes";
+import indexRoutes from "./routes/indexRoutes";
+
 
 class Server {
   public app: Application;
