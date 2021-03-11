@@ -9,7 +9,7 @@ class GamesRoutes {
   }
 
   config(): void {
-    this.router.get("/", gamesController.list);
+    this.router.get("/", gamesController.getAll);
     this.router.get("/:id", gamesController.getOne);
     this.router.post("/", gamesController.create);
     this.router.delete("/:id", gamesController.delete);

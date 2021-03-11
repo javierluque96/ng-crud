@@ -4,8 +4,13 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 const promise_mysql_1 = __importDefault(require("promise-mysql"));
-const keys_1 = __importDefault(require("./keys"));
-const pool = promise_mysql_1.default.createPool(keys_1.default.database);
+const database = {
+    host: process.env.HOST,
+    user: process.env.DB_USER,
+    password: process.env.DB_PASS,
+    database: process.env.DB_NAME,
+};
+const pool = promise_mysql_1.default.createPool(database);
 pool
     .getConnection()
     .then((conn) => {

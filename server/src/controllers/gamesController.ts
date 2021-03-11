@@ -2,7 +2,7 @@ import { Request, Response } from "express";
 import db from "../database";
 
 class GamesController {
-  public async list(req: Request, res: Response) {
+  public async getAll(req: Request, res: Response) {
     const games = await db.query("SELECT * FROM game");
     res.json(games);
   }
